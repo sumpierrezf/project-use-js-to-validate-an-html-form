@@ -19,12 +19,20 @@
       <div class="card-header">
         <h2 class="d-flex justify-content-start">Payment form example.</h2>
       </div>
-      <!--campos del formulario-->
+      <!--Inicio del formulario-->
       <div class="card-body">
-        <form class="row g-3">
+        <form
+          onsubmit="enviarDatos()"
+          action="#"
+          method=""
+          id="form"
+          class="row g-3"
+        >
+          <!--Alerta-->
           <div class="alert alert-danger" id="alert" role="alert">
             Some fields are missing.
           </div>
+          <!--Card number-->
           <div class="col-md-4">
             <label
               for="inputAddress"
@@ -35,9 +43,10 @@
               type="text"
               class="form-control"
               id="card"
-              placeholder="XXXXXXXXXXX"
+              placeholder="XXXX-XXXX-XXXX-XXXX"
             />
           </div>
+          <!--CVC-->
           <div class="col-md-4">
             <label
               for="inputAddress"
@@ -51,9 +60,10 @@
               placeholder="0000"
             />
           </div>
+          <!--Cantidad-->
           <div class="col-md-4">
             <label
-              for="inputAddress"
+              for="cantidad"
               class="form-label d-flex justify-content-start"
               ><strong>Amount</strong></label
             >
@@ -68,10 +78,9 @@
               />
             </div>
           </div>
+          <!--First name-->
           <div class="col-md-6">
-            <label
-              for="inputAddress2"
-              class="form-label d-flex justify-content-start"
+            <label for="nombre" class="form-label d-flex justify-content-start"
               ><strong>First name</strong></label
             >
             <input
@@ -81,9 +90,10 @@
               placeholder="First name"
             />
           </div>
+          <!--Last Name-->
           <div class="col-md-6">
             <label
-              for="inputAddress2"
+              for="apellido"
               class="form-label d-flex justify-content-start"
               ><strong>Last name</strong></label
             >
@@ -94,6 +104,7 @@
               placeholder="Last name"
             />
           </div>
+          <!--select a city-->
           <div class="col-md-6">
             <label
               for="inputCity"
@@ -102,18 +113,23 @@
             >
             <input type="text" class="form-control" id="city" />
           </div>
+          <!--select a state-->
           <div class="col-md-4">
-            <label
-              for="inputState"
-              class="form-label d-flex justify-content-start"
+            <label for="state" class="form-label d-flex justify-content-start"
               ><strong>State</strong></label
             >
-            <select id="state" class="form-select">
-              <option selected>Choose...</option>
-              <option>Lavalleja</option>
-              <option>Montevideo</option>
+            <select
+              id="state"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Pick a State</option>
+              <option value="1">Montevideo</option>
+              <option value="2">Lavalleja</option>
+              <option value="3">Maldonado</option>
             </select>
           </div>
+          <!--postal code-->
           <div class="col-md-2">
             <label
               for="inputZip"
@@ -122,6 +138,7 @@
             >
             <input type="text" class="form-control" id="postalCode" />
           </div>
+          <!--radio buttons-->
           <div class="col-md-3">
             <div class="form-check">
               <p class="d-flex justify-content-start">
@@ -193,6 +210,7 @@
               <small>Add any notes here.</small>
             </p>
           </div>
+          <!--footer-->
           <div class="card-footer text-end bg-grey border-success">
             <div class="col-12">
               <button type="submit" class="btn btn-primary bg-secondary">
@@ -205,7 +223,6 @@
           </div>
         </form>
       </div>
-      <!--footer-->
     </div>
   </body>
 </html>
