@@ -21,22 +21,14 @@
       </div>
       <!--Inicio del formulario-->
       <div class="card-body">
-        <form
-          onsubmit="enviarDatos()"
-          action="#"
-          method=""
-          id="form"
-          class="row g-3"
-        >
+        <form action="#" method="" id="form" class="row g-3">
           <!--Alerta-->
           <div class="alert alert-danger" id="alert" role="alert">
             Some fields are missing.
           </div>
           <!--Card number-->
           <div class="col-md-4">
-            <label
-              for="inputAddress"
-              class="form-label d-flex justify-content-start"
+            <label for="card" class="form-label d-flex justify-content-start"
               ><strong>Card #</strong></label
             >
             <input
@@ -48,9 +40,7 @@
           </div>
           <!--CVC-->
           <div class="col-md-4">
-            <label
-              for="inputAddress"
-              class="form-label d-flex justify-content-start"
+            <label for="cvc" class="form-label d-flex justify-content-start"
               ><strong>CVC #</strong></label
             >
             <input
@@ -62,9 +52,7 @@
           </div>
           <!--Cantidad-->
           <div class="col-md-4">
-            <label
-              for="cantidad"
-              class="form-label d-flex justify-content-start"
+            <label for="amount" class="form-label d-flex justify-content-start"
               ><strong>Amount</strong></label
             >
             <div class="input-group mb-3">
@@ -80,7 +68,9 @@
           </div>
           <!--First name-->
           <div class="col-md-6">
-            <label for="nombre" class="form-label d-flex justify-content-start"
+            <label
+              for="firstName"
+              class="form-label d-flex justify-content-start"
               ><strong>First name</strong></label
             >
             <input
@@ -93,7 +83,7 @@
           <!--Last Name-->
           <div class="col-md-6">
             <label
-              for="apellido"
+              for="lastName"
               class="form-label d-flex justify-content-start"
               ><strong>Last name</strong></label
             >
@@ -106,9 +96,7 @@
           </div>
           <!--select a city-->
           <div class="col-md-6">
-            <label
-              for="inputCity"
-              class="form-label d-flex justify-content-start"
+            <label for="city" class="form-label d-flex justify-content-start"
               ><strong>City</strong></label
             >
             <input type="text" class="form-control" id="city" />
@@ -132,7 +120,7 @@
           <!--postal code-->
           <div class="col-md-2">
             <label
-              for="inputZip"
+              for="postalCode"
               class="form-label d-flex justify-content-start"
               ><strong>Postal Code</strong></label
             >

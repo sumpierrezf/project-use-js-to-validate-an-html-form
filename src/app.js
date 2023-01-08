@@ -34,86 +34,108 @@ window.onload = function() {
     console.log(message.value);
     console.log(alert);
 
-    //cambiando color de fondo a card
+    //funcion para validar que los campos no esten vacios
+
+    /*function validateFields(e) {
+                  let field = e.target;
+                  let fieldValue = e.target.value;
+                  if (fieldValue.trim().length === 0 && fieldValue === "Pick a State") {
+                    field.style.background = "salmon";
+                    alert.style.display = "block";
+                  } else {
+                    field.style.background = "white";
+                    alert.style.display = "none";
+                  }
+                }
+                card.addEventListener("blur", validateFields);
+                cvc.addEventListener("blur", validateFields);
+                amount.addEventListener("blur", validateFields);
+                firstName.addEventListener("blur", validateFields);
+                lastName.addEventListener("blur", validateFields);
+                city.addEventListener("blur", validateFields);
+                state.addEventListener("blur", validateFields);
+                postalCode.addEventListener("blur", validateFields);
+                message.addEventListener("blur", validateFields);
+                alert.addEventListener("blur", validateFields);*/
+
     if (card.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("card").style.background = "red";
+      document.getElementById("card").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo a CVC
     if (cvc.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("cvc").style.background = "red";
+      document.getElementById("cvc").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo a amount
     if (amount.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("amount").style.background = "red";
+      document.getElementById("amount").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo a firstName
     if (firstName.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("firstName").style.background = "red";
+      document.getElementById("firstName").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo a lastName
     if (lastName.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("lastName").style.background = "red";
+      document.getElementById("lastName").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo a City
     if (city.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("city").style.background = "red";
+      document.getElementById("city").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo a State
     if (state.value === "Pick a State") {
-      //console.log("El campo email está vacio");
-      document.getElementById("state").style.background = "red";
+      document.getElementById("state").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo al Codigo postal
     if (postalCode.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("postalCode").style.background = "red";
+      document.getElementById("postalCode").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
+
     //cambiando color de fondo al Mensaje
     if (message.value === "") {
-      //console.log("El campo email está vacio");
-      document.getElementById("message").style.background = "red";
+      document.getElementById("message").style.background = "salmon";
       //alert
       document.getElementById("alert");
     } else {
-      document.getElementById("alert").style.visibility = "hidden";
+      document.getElementById("alert").style.display = "none";
     }
   }
 };
