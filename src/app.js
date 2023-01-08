@@ -34,30 +34,6 @@ window.onload = function() {
     console.log(message.value);
     console.log(alert);
 
-    //funcion para validar que los campos no esten vacios
-
-    /*function validateFields(e) {
-                  let field = e.target;
-                  let fieldValue = e.target.value;
-                  if (fieldValue.trim().length === 0 && fieldValue === "Pick a State") {
-                    field.style.background = "salmon";
-                    alert.style.display = "block";
-                  } else {
-                    field.style.background = "white";
-                    alert.style.display = "none";
-                  }
-                }
-                card.addEventListener("blur", validateFields);
-                cvc.addEventListener("blur", validateFields);
-                amount.addEventListener("blur", validateFields);
-                firstName.addEventListener("blur", validateFields);
-                lastName.addEventListener("blur", validateFields);
-                city.addEventListener("blur", validateFields);
-                state.addEventListener("blur", validateFields);
-                postalCode.addEventListener("blur", validateFields);
-                message.addEventListener("blur", validateFields);
-                alert.addEventListener("blur", validateFields);*/
-
     if (card.value === "") {
       document.getElementById("card").style.background = "salmon";
       //alert
@@ -137,5 +113,34 @@ window.onload = function() {
     } else {
       document.getElementById("alert").style.display = "none";
     }
+
+    //funcion para validar que los campos no esten vacios
+
+    /*const expresiones = {
+                          texto: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+                          numeros: /^\d{4,14}$/ // 7 a 14 numeros.
+                        };*/
+
+    /*function validateFields(e) {
+                  let field = e.target;
+                  let fieldValue = e.target.value;
+                  if (fieldValue.trim().length === 0 && stateValue === "Pick a State") {
+                    field.style.background = "salmon";
+                    alert.style.display = "block";
+                  } else {
+                    field.style.background = "white";
+                    alert.style.display = "none";
+                  }
+                }
+                card.addEventListener("blur", validateFields);
+                cvc.addEventListener("blur", validateFields);
+                amount.addEventListener("blur", validateFields);
+                firstName.addEventListener("blur", validateFields);
+                lastName.addEventListener("blur", validateFields);
+                city.addEventListener("blur", validateFields);
+                state.addEventListener("blur", validateFields);
+                postalCode.addEventListener("blur", validateFields);
+                message.addEventListener("blur", validateFields);
+                alert.addEventListener("blur", validateFields);*/
   }
 };
